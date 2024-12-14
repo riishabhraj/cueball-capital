@@ -29,16 +29,19 @@ Start the server with npm start.
 
 ## Endpoints
 ### Investment Routes
+``` json
 GET /api/investments: Fetch all investments.
 GET /api/investments/pass: Fetch investments that pass budget rules.
 GET /api/investments/violations: Fetch investments that violate budget rules.
+```
 
 ### Budget Routes
+``` json
 GET /api/budget: Fetch all budget data.
+```
 
 ## Example Usage
 Fetch all investments:
-
 ``` json 
 curl -X GET http://localhost:3000/api/investments
 ```
@@ -50,7 +53,6 @@ curl -X GET http://localhost:3000/api/investments/pass
 
 ## JSON Data Sample
 Budget Example:
-
 ``` json 
 {
   "ID": 1,
@@ -59,8 +61,8 @@ Budget Example:
   "Sector": "FinTech"
 }
 ```
-Investment Example:
 
+Investment Example:
 ``` json 
 {
   "ID": 1,
